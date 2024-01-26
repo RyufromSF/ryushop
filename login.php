@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Halaman Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form action="validasi.php" method="POST">
         <h1>Selamat Datang!</h1>
