@@ -21,7 +21,7 @@
 
     $user = mysqli_fetch_array($query);
     ?>
-
+    
     <div>
         <form action="update-user.php" method="POST">
             <h1>Lihat User</h1>
