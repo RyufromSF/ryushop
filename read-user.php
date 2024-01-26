@@ -4,19 +4,17 @@
     <title>Read User</title>
 </head>
 <body>
-<?php include "menu.php"; ?>
+    <?php include "menu.php"; ?>
 
-<?php
-if ($_SESSION["level"] != "admin") {
-    // jika di sesi ini levelnya bukan admin, akses ditolak
-    echo "Anda tidak dapat mengakses halaman ini";
-    exit;
-}
+    <?php
+    if ($_SESSION["level"] != "admin") {
+        echo "Anda tidak dapat mengakses halaman ini";
+        exit;
+    }
 
-require "koneksi.php";
+    require "koneksi.php";
 
-// id diambil dari tombol Lihat yang ditekan di user.php
-$id = $_GET["id"];
+    $id = $_GET["id"];
 
     $sql = "SELECT * FROM user WHERE id = '$id'";
     $query = mysqli_query($koneksi, $sql);
