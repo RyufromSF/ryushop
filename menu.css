@@ -1,0 +1,51 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    background-color: #333; /* Set background color */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff; /* Set text color */
+}
+
+nav ul li:hover {
+    background-color: #555; /* Set background color on hover */
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Set background color for submenus */
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+nav ul ul li {
+    padding: 10px;
+    border-top: 1px solid #555; /* Add border between submenu items */
+}
+
+nav ul ul li:hover {
+    background-color: #444; /* Set background color on submenu item hover */
+}

@@ -7,6 +7,7 @@
 ?>
 
 <nav>
+    <link rel="stylesheet" href="menu.css">
     <ul>
         <li><a href="home.php">HOME</a></li>
         <li>MASTER
@@ -15,6 +16,9 @@
                     <li><a href="user.php">USER</a></li>
                 <?php endif ?>
                 <li><a href="barang.php">BARANG</a></li>
+                <?php if ($_SESSION["level"] == "admin" || $_SESSION["level"] == "keuangan") : ?>
+                    <li><a href="pelanggan.php">PELANGGAN</a></li>
+                <?php endif ?>
             </ul>
         </li>
         <li>TRANSAKSI
