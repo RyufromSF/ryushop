@@ -2,6 +2,57 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/premium-photo/paper-shopping-bag-blue-background_113876-2899.jpg');
+    background-size: 100%;
+}
+
+div {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+    </style>
 </head>
 <body>
     <?php include "menu.php"; ?>
@@ -56,6 +107,9 @@
             <?php endwhile ?>
         </table>
     </div>
+<br>
+<br>
+    <?php include "footer.php" ; ?>
     <script>
             function konfirmasi(form) {
                 FormData = new FormData(form);
